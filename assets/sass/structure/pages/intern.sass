@@ -1,0 +1,494 @@
+/*Breadcumb*/
+section.breadcumb
+    background: $cor7
+    padding: 3.3rem 0 4rem
+    cursor: default
+    .title__page
+        font-weight: $medium
+        font-size: 3.2rem
+        line-height: 3.8rem
+        color: $cor6
+        margin-bottom: 1.6rem
+    .breadcrumb__item
+        font-size: 1.6rem
+        line-height: 1.8rem
+        color: $cor4
+        span
+            margin: 0 .8rem
+
+/*Internas*/
+section.intern
+    padding: 8rem 0 10.6rem
+    &.not__padding
+        padding: 0
+    .group__flex
+        @include flexbox
+        gap: 2.4rem
+        &:not(:last-child)
+            margin-bottom: 4rem
+        @include breakpoint(desktop)
+            @include flexwrap        
+        .col
+            &.left
+                width: 100%
+                max-width: 380px
+                @include breakpoint(desktop)
+                    max-width: initial
+            &.right
+                width: 100%
+                img
+                    max-width: 100%
+                    margin: 8rem 0
+                iframe
+                    width: 100%
+                    max-width: 100%
+                    margin: 4rem 0
+                    @include breakpoint(mobile)
+                        height: 215px
+                video
+                    width: 100%
+                    max-width: 100%
+                    margin: 4rem 0
+    h2
+        font-weight: $medium
+        font-size: 4rem
+        line-height: 4.8rem
+        color: $cor6
+        @include breakpoint(mobile)
+            font-size: 3rem
+            line-height: 4rem
+    .txt
+        font-size: 1.6rem
+        line-height: 2.4rem
+        color: $cor4
+        font-weight: $regular
+        &:not(:last-child)
+            margin-bottom: 2.4rem
+        
+        i
+            font-size: 1rem
+            margin-right: 1rem
+            line-height: 1.5rem
+
+    .container__cursos
+        margin: 5.6rem 0 8rem
+        .item__curso
+            border: solid 1px $cor8
+            transition: .2s
+            .img__curso
+                margin-bottom: 2.4rem
+                max-width: 100%
+                img
+                    max-width: 100%
+                    @include breakpoint(mobile)
+                        width: 100%
+            .descricao__curso
+                padding: 0 1.6rem 3rem
+                h3
+                    font-size: 2rem
+                    line-height: 2.4rem
+                    color: $cor4
+                    font-weight: $medium
+                    margin-bottom: 1.6rem
+                p
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    color: $cor4
+                    font-weight: $regular
+                .duracao__metodo
+                    margin: 2.4rem 0
+                    p
+                        font-size: 1.6rem
+                        line-height: 2.4rem
+                        color: $cor4
+                        font-weight: $regular
+                    i
+                        font-size: 1.6rem
+                        color: $cor6
+                        margin-right: .8rem
+    .areas__de__atuacao
+        margin: 8rem 0 10.6rem
+        h2
+            font-weight: $medium
+            font-size: 4rem
+            line-height: 4.8rem
+            color: $cor6
+            @include breakpoint(mobile)
+                font-size: 3rem
+                line-height: 4rem
+
+    .container__areas__atuacao
+        @include flexbox
+        gap: 2.4rem
+        margin: 4rem 0 0
+        @include breakpoint(tablet)
+            @include flexwrap
+            @include center
+        .item__atuacao
+            position: relative
+            transition: .2s
+            &:hover
+                transform: scale(1.1)
+            .descricao__atuacao
+                position: absolute
+                padding-top: 56px
+                left: 26px
+                &.sobre
+                    top: 45%
+                    transform: translateY(-50%)
+                @include breakpoint(desktop)
+                    padding-top: 2.4rem
+                h2
+                    max-width: 300px
+                    margin-bottom: 1.6rem
+                    @include breakpoint(mobile)
+                        font-size: 2.4rem
+                        line-height: 3rem
+                p
+                    font-size: 1.6rem
+                    line-height: 1.8rem
+                    font-weight: $regular
+                    color: $white
+                    margin-bottom: 2.4rem
+            .img__atuacao
+                img
+                    max-width: 100%
+    .img__academica
+        margin: 8rem 0 6.8rem
+        max-width: 100%
+        @include breakpoint(mobile)
+            margin: 4rem 0 3.4rem
+
+    .container__cards
+        @include grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 2.4rem
+        margin: 4.8rem 0 8rem
+        @include breakpoint(tablet)
+            grid-template-columns: repeat(2,1fr)
+        @include breakpoint(mobile)
+            grid-template-columns: 1fr
+        .item__card
+            border: solid 1px $cor8
+            padding: 2.4rem 1.6rem 3.3rem
+            h3
+                font-size: 2rem
+                font-weight: $medium
+                line-height: 2.4rem
+                color: $cor4
+                margin-bottom: 1.6rem
+            p
+                font-size: 1.6rem
+                line-height: 2.4rem
+                font-weight: $regular
+                color: $cor4
+
+    .container__exemplos__atualizacao
+        margin-bottom: 8rem
+        .slick-slide
+            margin: 0 1.2rem
+        .item__exemplo
+            border: solid 1px $cor8
+            padding: 2.4rem 1.6rem 3rem
+            transition: .2s
+            .container__labels
+                @include flexbox
+                gap: 1.2rem
+                margin-bottom: 1.6rem
+                .label
+                    background: $cor3
+                    width: max-content
+                    padding: .4rem 1.2rem
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    font-weight: $regular
+                    color: $cor1
+            h3
+                font-size: 2rem
+                line-height: 2.4rem
+                font-weight: $medium
+                color: $cor4
+                margin-bottom: 1.6rem
+            p
+                font-size: 1.6rem
+                line-height: 2.4rem
+                font-weight: $regular
+                color: $cor4
+                margin-bottom: 2.1rem
+
+    .img__sobre__ciencia
+        margin: 8rem 0
+        max-width: 100%
+
+    .publico__alvo
+        h2
+            margin-bottom: 5rem
+        .container__publico__alvo
+            margin-bottom: 8rem
+            .item__publico__alvo
+                border: solid 1px $cor8
+                padding: 1.2rem 1.6rem 2.2rem
+                width: 100%
+                min-height: 350px
+                .icon
+                    margin-bottom: 1.8rem
+                    img
+                        max-width: 100%
+                        margin: 0 auto
+                .titulo__perfil
+                    h2
+                        font-size: 2.4rem
+                        line-height: 2.8rem
+                        font-weight: $regular
+                        color: $cor4
+                        text-align: center
+                        margin-bottom: 1.6rem
+                .descricao__perfil
+                    p
+                        font-size: 1.6rem
+                        line-height: 2.4rem
+                        color: $cor4
+                        @include flexbox
+                        align-items: center                    
+                        i
+                            font-size: .4rem
+                            margin-right: 1rem
+
+
+/*BgGreen*/
+section.bgGreen
+    padding: 8rem 0
+    background: $cor1
+    h2
+        font-size: 4rem
+        line-height: 4.8rem
+        font-weight: $medium
+        color: $cor2
+        margin-bottom: 4rem
+        @include breakpoint(mobile)
+            font-size: 2.4rem
+            line-height: 3rem
+    .container__planos
+        .slick-list
+            padding: 20px 0px
+            @include breakpoint(mobile)
+                padding: 32px 0px
+        .item__plano
+            border: solid 1px $cor8
+            width: max-content
+            padding: 2.6rem 3.2rem 3.2rem
+            position: relative
+            margin: 2rem
+            transition: .2s
+            min-height: 595px
+            @include breakpoint(mobile)
+                padding: 2.6rem 2rem 3.2rem
+                margin: 0
+            &.white
+                background: $white
+            &:hover
+                transform: scale(1.05)
+            .destaque
+                width: max-content
+                padding: .4rem 1.6rem
+                background: $cor2
+                position: absolute
+                top: -16px
+                left: 50%
+                transform: translate(-50%)
+                h2
+                    color: $white
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    font-weight: $semibold
+                    margin-bottom: 0
+            .header__plano
+                padding-bottom: 2.7rem
+                border-bottom: solid 1px $cor5
+                margin-bottom: 2.1rem
+                .group__flex
+                    @include flexbox
+                    @include justify
+                    align-items: center
+                    @include breakpoint(mobile)
+                        @include flexwrap
+                        gap: 2rem
+                        .col
+                            width: 100%
+                    h3
+                        font-size: 3rem
+                        line-height: 3.8rem
+                        font-weight: $medium
+                        margin-bottom: .4rem
+                        color: $cor2
+                        @include breakpoint(mobile)
+                            font-size: 2.4rem
+                            line-height: 3rem
+                    h4
+                        font-size: 2.2rem
+                        line-height: 3rem
+                        font-weight: $bold                        
+                        &.white
+                            color: $white
+                        &.black
+                            color: $cor1
+                    p
+                        font-size: 1.6rem
+                        line-height: 1.8rem
+                        font-weight: $regular
+                        &.white
+                            color: $white
+                        &.black
+                            color: $cor1
+            .itens__plano
+                margin-bottom: 4.2rem                
+                p
+                    font-size: 1.6rem
+                    font-weight: $regular
+                    line-height: 2.4rem
+                    @include flexbox
+                    align-items: center
+                    &:not(:last-child)
+                        margin-bottom: 1.2rem
+                    &.check
+                        color: $white
+                        i
+                            font-size: 2.4rem
+                            color: $cor2
+                        &.black
+                            color: $cor4
+                    &.not__check
+                        color: $cor9
+                        span
+                            text-decoration: line-through
+                        i
+                            font-size: 2.4rem
+                            color: $cor9
+                            text-decoration: none
+                    i
+                        margin-right: 1.6rem
+    .curriculum
+        padding-top: 8rem
+        border-top: solid 1px $cor6
+        margin-top: 8rem
+    .group__flex
+        @include flexbox
+        gap: 2.4rem
+        @include breakpoint(desktop)
+            @include flexwrap        
+        .col
+            &.left
+                width: 100%
+                max-width: 380px
+                @include breakpoint(desktop)
+                    max-width: initial
+            &.right
+                width: 100%
+                h3
+                    font-size: 2.4rem
+                    line-height: 2.8rem
+                    font-weight: $regular
+                    color: $cor2
+                    margin-bottom: 1.6rem
+        h2
+            font-weight: $medium
+            font-size: 4rem
+            line-height: 4.8rem
+            color: $cor2
+            @include breakpoint(mobile)
+                font-size: 3rem
+                line-height: 4rem
+        .txt
+            font-size: 1.6rem
+            line-height: 2.4rem
+            color: $white
+            font-weight: $regular
+            @include flexbox
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 2.4rem
+            i
+                font-size: .4rem
+                margin-right: 1rem
+        .img__perfil
+            position: relative
+            &:after
+                content: ""
+                top: -5px
+                width: 90%
+                height: 87%
+                background: $cor2
+                position: absolute
+                right: -2px
+        .img__perfil__profissional
+            max-width: 100%        
+            position: relative    
+            z-index: 2
+        .descricao__pontos
+            margin-bottom: 2.4rem
+            .txt
+                &:not(:last-child)
+                    margin-bottom: 0rem
+
+
+/*Contato*/
+section.contato__email
+    padding: 8rem 0
+    .group__flex
+        @include flexbox
+        gap: 2.4rem
+        @include breakpoint(desktop)
+            @include flexwrap
+        .col
+            &.left
+                width: 100%
+                max-width: 380px
+                @include breakpoint(desktop)
+                    max-width: initial
+            &.right
+                width: 100%
+    h2
+        font-weight: $medium
+        font-size: 4rem
+        line-height: 4.8rem
+        color: $cor6
+        @include breakpoint(mobile)
+            font-size: 3rem
+            line-height: 4rem
+    .input, .input__area
+        border: solid 1px $cor8
+        box-sizing: border-box
+    label
+        span
+            color: $cor9
+            font-weight: $regular
+
+/*Envie Whatsapp*/
+section.contato__whatsapp
+    background: $cor7
+    padding: 8rem 0 10.4rem
+    .group__flex
+        @include flexbox
+        gap: 2.4rem
+        align-items: baseline
+        @include breakpoint(desktop)
+            @include flexwrap
+    h2
+        font-weight: $medium
+        font-size: 4rem
+        line-height: 4.8rem
+        color: $cor6
+        max-width: 380px
+        @include breakpoint(mobile)
+            font-size: 3rem
+            line-height: 4rem
+    p
+        font-size: 1.6rem
+        line-height: 2.4rem
+        font-weight: $regular
+        color: $cor4
+        margin-bottom: 2.4rem
+
+.link__contato
+    color: $cor6
+    font-weight: $bold

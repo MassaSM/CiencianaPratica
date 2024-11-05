@@ -1,0 +1,284 @@
+section.banner
+    padding-bottom: 10.9rem
+    overflow: hidden
+    .item__banner
+        background: $cor10
+        position: relative
+        min-height: 517px
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width:963px
+            height: 540px
+            background: url(../../images/banners/mask__banner.png) center top no-repeat
+            @media only screen and (max-width: 1280px)
+                bottom: 0
+                top: auto
+                width: 414px
+                height: 429px
+                background: url(../../images/banners/mask__banner-mobile.png) center top no-repeat                
+        .center
+            @include flexbox
+            @include justify     
+            @media only screen and (max-width: 1280px)
+                @include flexwrap       
+            .descricao
+                max-width: 580px
+                padding-top: 7rem
+                position: relative
+                z-index: 2
+                @media only screen and (max-width: 1280px)
+                    width: 100%
+                    max-width: initial
+                    order: 2
+                    padding: 14rem 0 7rem
+                @include breakpoint(mobile)
+                    padding: 12rem 0 7rem
+                h1
+                    font-size: 4.8rem
+                    line-height: 5.6rem
+                    color: $cor2
+                    font-weight: $medium
+                    margin-bottom: 1.6rem
+                    @include breakpoint(mobile)
+                        font-size: 2.8rem
+                        line-height: 3.2rem
+                p
+                    font-size: 2rem
+                    line-height: 2.8rem
+                    color: $cor3
+                    font-weight: $regular
+                    margin-bottom: 3.2rem
+                    @include breakpoint(mobile)
+                        font-size: 1.6rem
+                        line-height: 2.4rem
+        .imagem
+            position: relative
+            @media only screen and (max-width: 1280px)
+                order: 1
+                margin: 0 auto
+            &::before
+                content: ''
+                position: absolute
+                border-radius: 50%
+                width: 788px
+                height: 805px
+                background: $cor2
+                top: -222px
+                right: -220px
+                @media only screen and (max-width: 1280px)
+                    right: 0
+                    left: 50%
+                    transform: translate(-50%, 0%)
+                @include breakpoint(mobile)
+                    width: 462px
+                    height: 473px
+                    top: -190px
+            img
+                position: relative
+                z-index: 2
+                max-width: 100%
+                @include breakpoint(mobile)
+                    max-width: 50%
+                    margin: 2rem auto 0
+
+section.o__que__e
+    margin-bottom: 11.6rem
+    .group__flex
+        @include flexbox
+        gap: 10rem
+        align-items: center
+        @include breakpoint(mobile)
+            @include flexwrap
+            gap: 4rem
+    .img__about
+        max-width: 100%
+    .col
+        &.left
+            @include breakpoint(mobile)
+                order: 2
+        &.right
+            max-width: 482px
+            @include breakpoint(mobile)
+                order: 1
+            h3
+                font-size: 1.4rem
+                line-height: 1.6rem
+                font-weight: $regular
+                letter-spacing: .2rem
+                color: $cor1
+                margin-bottom: .8rem
+                text-transform: uppercase
+            h2
+                font-size: 4rem
+                line-height: 4.8rem
+                font-weight: $medium
+                color: $cor6
+                margin-bottom: 1.6rem
+            .txt
+                font-size: 1.6rem
+                line-height: 2.4rem
+                font-weight: $regular
+                color: $cor4
+                margin-bottom: 2.4rem
+            .link__ver__mais
+                &:hover
+                    color: $cor2
+
+section.publico__alvo
+    h2
+        font-size: 4rem
+        line-height: 4.8rem
+        font-weight: $medium
+        color: $cor6
+        margin-bottom: 5rem
+        text-align: center
+        @include breakpoint(mobile)
+            font-size: 3rem
+            line-height: 4rem
+    .container__publico__alvo
+        @include grid
+        grid-template-columns: repeat(4,1fr)
+        gap: 2.4rem
+        @include breakpoint(tablet)
+            grid-template-columns: repeat(2,1fr)
+        .item__publico__alvo
+            .icon
+                margin-bottom: 1.8rem
+                img
+                    max-width: 100%
+                    margin: 0 auto
+            .titulo__perfil
+                h2
+                    margin: 0 auto
+                    max-width: 240px
+                    font-size: 2.4rem
+                    line-height: 2.8rem
+                    font-weight: 400
+                    color: $cor4
+                    text-align: center
+                    margin-bottom: 0
+
+section.depoimentos
+    background: $cor2
+    padding: 7rem 0 14.4rem
+    position: relative
+    overflow: hidden
+    &:before
+        content: ''
+        position: absolute
+        top: -106px
+        left: -275px
+        width: 580px
+        height: 514px
+        background: url(../../images/mask__depoimentos.png) center top no-repeat
+        @include breakpoint(mobile)
+            display: none
+    &:after
+        content: ''
+        position: absolute
+        bottom: -134px
+        right: -50px
+        width: 580px
+        height: 514px
+        background: url(../../images/mask__depoimentos.png) center top no-repeat
+    .center
+        z-index: 1
+        position: relative
+    .slick-dots li.slick-active button:before
+        color: $white!important
+    .slider-next:before, .slider-prev:before
+        color: $white!important
+        line-height: 42px
+        text-align: center
+        margin-left: 12px
+    .slider-next, .slider-prev
+        top: 115%
+    .slider-next, .slider-prev
+        width: 42px
+        height: 42px
+        border: solid 1px $white
+    .slider-prev
+        left: 46%
+        @include breakpoint(desktop)
+            left: 45%
+        @include breakpoint(tablet)
+            left: 40%
+    .slider-next
+        right: 46%
+        @include breakpoint(desktop)
+            right: 45%
+        @include breakpoint(tablet)
+            right: 40%
+    h2
+        font-size: 4rem
+        line-height: 4.8rem
+        font-weight: $medium
+        color: $white
+        margin-bottom: 4.5rem
+        text-align: center
+    .container__depoimentos      
+        .item__depoimento            
+            background: $white
+            box-shadow: 0px -2px 13px 0px rgba(0,0,0,0.2)
+            padding: 4.4rem 5.5rem 5rem          
+            .header__depoimento
+                margin-bottom: 2.4rem                
+                margin: 0 auto
+                .img__depoimento
+                    border-radius: 50%    
+                    position: relative
+                    margin-bottom: 2.4rem
+                    &:before
+                        content: ''
+                        width: 44px
+                        height: 38px
+                        top: 0
+                        left: 100px
+                        position: absolute
+                        background: url(../../images/aspas-left.png) center top no-repeat
+                        @include breakpoint(desktop)
+                            left: 58px
+                        @include breakpoint(tablet)
+                            left: -22px
+                    &:after
+                        content: ''
+                        width: 44px
+                        height: 38px
+                        top: 0
+                        right: 100px
+                        position: absolute
+                        background: url(../../images/aspas-right.png) center top no-repeat    
+                        @include breakpoint(desktop)
+                            right: 58px
+                        @include breakpoint(tablet)
+                            right: -22px            
+                    img
+                        max-width: 100%
+                        border-radius: 50%
+                        margin: 0 auto
+                        
+                .nome__cliente
+                    font-size: 2rem
+                    line-height: 2.4rem
+                    font-weight: $semibold
+                    text-align: center
+                    color: $cor4
+                    margin-bottom: .8rem
+                .profissao__cliente
+                    font-size: 1.4rem
+                    line-height: 2.1rem
+                    font-weight: $regular
+                    color: $cor4
+                    text-align: center
+            .descricao__depoimento
+                margin-top: 2.4rem
+                p
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    font-weight: $regular
+                    color: $cor4
+                    text-align: center
+                

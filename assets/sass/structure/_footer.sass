@@ -1,0 +1,124 @@
+footer
+    .logoFooter
+        max-width: 100%
+        margin-bottom: 5.4rem
+
+section.sitemap
+    background: $cor1
+    padding: 6.2rem 0 7rem
+    .container__flex__group__sitemap
+        @include flexbox
+        gap: 14.8rem
+        @include breakpoint(desktop)
+            @include flexwrap
+            gap: 8rem
+        .col
+            width: 100%
+            &.left
+                max-width: 460px
+                @include breakpoint(desktop)
+                    max-width: initial
+            &.right
+                max-width: 584px
+                @include breakpoint(desktop)
+                    max-width: initial
+    .container__flex__group__links
+        @include flexbox
+        gap: 3.8rem
+        @include breakpoint(mobile)
+            @include flexwrap
+        .col
+            @include flexbox
+            flex-direction: column
+            a
+                font-size: 1.6rem
+                line-height: 2.4rem
+                color: $cor2
+                transition: .2s
+                &:hover
+                    color: $cor3
+                &:not(:last-child)
+                    margin-bottom: 2.4rem
+    .bgForm
+        background: $white
+        height: 65px
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 0 0.8rem
+        margin: 3.2rem 0 3.8rem
+    .newsletter
+        h3
+            text-transform: uppercase
+            font-size: 1.4rem
+            line-height: 1.6rem
+            color: $cor3
+            margin-bottom: .8rem
+            letter-spacing: .2rem
+        h2
+            font-size: 2.8rem
+            line-height: 3.2rem
+            color: $cor2
+            font-weight: $medium
+        form#newsletter
+            width: 100%
+            @include flexbox
+            position: relative
+            .formulario_error_mensagem
+                position: absolute
+                bottom: -28px
+
+    .contatos__sociais
+        @include flexbox
+        @include justify
+        @include breakpoint(mobile)
+            @include flexwrap
+            gap: 4rem
+        .redes__sociais, .contato__social
+            h2
+                font-size: 1.4rem
+                line-height: 1.6rem
+                text-transform: uppercase
+                color: $white
+                letter-spacing: .2rem
+                margin-bottom: 2.4rem
+        .redes__sociais
+            ul
+                @include flexbox
+                gap: 2.8rem
+                a
+                    font-size: 2.4rem
+                    color: $cor2
+                    transition: .2s
+                    &:hover
+                        color: $cor3
+                        i
+                            transition: .2s
+                            transform: scale(1.2)
+        .contato__social
+            p
+                font-size: 1.6rem
+                line-height: 2.4rem
+                color: $white
+                @include flexbox
+                gap: 1.6rem
+                align-items: center
+                &:not(:last-child)
+                    margin-bottom: 1.2rem
+                i
+                    font-size: 2.4rem
+                    color: $cor2
+            a
+                color: $white
+                transition: .2s
+                &:hover
+                    color: $cor2
+                    transform: scale(1.1)
+
+section.copyright
+    text-align: center
+    padding: 3rem 0
+    p
+        font-size: 1.2rem
+        line-height: 1.6rem
+        color: $cor4

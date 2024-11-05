@@ -1,0 +1,297 @@
+.field, field
+    width: 100%
+    display: block
+    position: relative
+    &:not(:last-child)
+        margin-bottom: 3.2rem
+    p
+        font-size: 1.4rem
+        line-height: 2.4rem
+        font-weight: $light
+        color: $cor1
+        margin: 0 0 1rem 1.6rem
+        a
+            color: $cor2
+            text-decoration: underline
+    &.w50
+        width: 50%
+        max-width: 369px
+        @include breakpoint(desktop)
+            width: 100%
+            max-width: initial
+label
+    display: block
+    font-size: 1.4rem
+    line-height: 2.4rem
+    font-weight: $semibold
+    color: $cor1
+    margin-bottom: .8rem
+
+.input
+    width: 100%
+    height: 45px
+    padding: 2.4rem
+    font-size: 1.6rem
+    font-weight: $light
+    background: $white   
+    color: $cor5
+    border: none
+
+.input__area
+    width: 100%
+    height: 158px
+    padding: 1.4rem 2.4rem
+    font-size: 1.6rem
+    background: transparent
+    background: $white
+    color: $cor5
+    border: none
+    resize: none
+
+.field__row
+    position: relative
+
+/*Placeholder*/
+.input::-webkit-input-placeholder, .input__area::-webkit-input-placeholder
+    font-size: 1.6rem
+    color: $cor5
+
+.input:-moz-placeholder, .input__area:-moz-placeholder
+    font-size: 1.6rem
+    color: $cor5
+
+.input::-moz-placeholder, .input__area::-moz-placeholder
+    font-size: 1.6rem
+    color: $cor5
+
+.input:-ms-input-placeholder, .input__area:-ms-input-placeholder
+    font-size: 1.6rem
+    color: $cor5
+
+.form__container
+    width: 100%
+
+/*Formulário Mensagem Erro*/
+.formulario_error_box, .input.formulario_error_box
+    border: solid 1px $red
+    box-shadow: inset 0 0 0 1px $red!important
+.formulario_error_mensagem
+    display: none
+    color: $red
+    width: 100%
+    z-index: 2
+    font-size: 1.4rem
+    margin-top: 1rem
+
+.group__field
+    @include flexbox
+    gap: 5.2rem
+    align-items: baseline
+    @include breakpoint(desktop)
+        @include flexwrap
+    .field
+        &:not(:last-child)
+            margin-bottom: 0rem
+
+.group__aceite
+    @include flexbox
+    align-items: center
+    gap: 14rem
+    @include breakpoint(mobile)
+        @include flexwrap
+        gap: 3.3rem
+    .field
+        @include flexbox
+        align-items: center
+        &:first-child
+            width: 100%
+            max-width: 490px
+        &:last-child
+            max-width: 137px
+        label
+            @include flexbox
+            align-items: center
+            gap: 1.3rem
+    .field:not(:last-child), field:not(:last-child)
+        margin-bottom: 0
+    .field p, field p
+        margin: 0
+
+/*Input Checkbox*/
+.form-group 
+    display: block
+    width: 100%
+    input 
+        padding: 0 
+        height: initial 
+        width: initial 
+        margin-bottom: 0 
+        display: none 
+        cursor: pointer 
+        &:checked 
+            & + label 
+                border: solid 1px $cor6
+                color: $cor6
+                background: $cor11
+                &:after 
+                    content: '' 
+                    display: block 
+                    position: absolute 
+                    top: 10px
+                    left: 15px
+                    width: 10px 
+                    height: 16px 
+                    border: solid $cor6
+                    border-width: 0 2px 2px 0 
+                    transform: rotate(45deg) 
+                &:before
+                    border: none
+    label 
+        width: 100%
+        position: relative 
+        cursor: pointer 
+        margin-bottom: 0
+        color: $cor9
+        font-weight: $regular
+        border: solid 1px $cor9
+        padding: 8px 12px
+        &:before 
+            content: '' 
+            -webkit-appearance: none 
+            background-color: transparent 
+            border: 1px solid $cor9
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05) 
+            padding: 6px 
+            display: inline-block 
+            position: relative 
+            vertical-align: middle 
+            cursor: pointer 
+            margin-right: 13px 
+
+
+
+
+/*Select*/
+.select 
+    position: relative
+    height: auto
+    padding: 0px
+    text-align: left
+.select select 
+    display: none
+.select-selected 
+    background-color: #fff
+    color: rgba(0, 0, 0, 0.8) !important
+.select-selected:after 
+    position: absolute
+    content: ""
+    right: 10px
+    background: url(../../images/arrow-select.png) no-repeat
+    width: 13px
+    height: 8px
+    top: 8px
+.select-selected:before 
+    position: absolute
+    content: ""
+    top: 18px
+    right: 10px
+    width: 0
+    height: 0
+    background: url(../../images/arrow-select.png) no-repeat
+    transform: rotate(180deg)
+.select-selected.select-arrow-active:before 
+    border: none
+.select-selected.select-arrow-active:after 
+    transform: rotate(180deg)
+.select-items div,.select-selected 
+    color: #ffffff
+    padding: 8px 0px
+    background: transparent
+    border-bottom: 1px solid #707070
+    cursor: pointer
+.select-items 
+    position: absolute
+    background-color: $cor2
+    top: 100%
+    left: 0
+    right: 0
+    z-index: 99
+    padding: 0 10px
+.select-hide 
+    display: none
+.select-items div:hover, .same-as-selected 
+    background-color: rgba(0, 0, 0, 0.1)
+
+/*Fale Conosco*/
+.formulario__fale__conosco,
+.filtrar__noticia
+    .input
+        height: 48px
+        padding: 15px 17px
+        border: solid 1px $cor2
+    .select-selected
+        height: 48px
+        padding: 15px 17px
+        border: solid 1px $cor2
+        font-size: 1.4rem
+        font-weight: $light
+        color: $cor1
+    .select-selected:after
+        top: 22px
+    .select-items div
+        padding: 12px 0
+        transition: .4s
+        &:hover
+            color: $cor2
+    .group__field
+        &:not(:last-child)
+            margin-bottom: 2.1rem
+        @include breakpoint(mobile)
+            gap: 2.2rem
+    .group__aceite
+        gap: 12rem
+        @include breakpoint(mobile)
+            gap: 3rem
+    .input__area
+        height: 146px
+        padding: 15px 17px
+        border: solid 1px $cor2
+        border-radius: 0
+    .input::-webkit-input-placeholder, .input__area::-webkit-input-placeholder
+        font-size: 1.4rem
+        font-weight: $light
+        color: $cor1
+    .input:-moz-placeholder, .input__area:-moz-placeholder
+        font-size: 1.4rem
+        font-weight: $light
+        color: $cor1
+    .input::-moz-placeholder, .input__area::-moz-placeholder
+        font-size: 1.4rem
+        font-weight: $light
+        color: $cor1
+    .input:-ms-input-placeholder, .input__area:-ms-input-placeholder
+        font-size: 1.4rem
+        font-weight: $light
+        color: $cor1
+    .group__aceite .field:last-child
+        max-width: 110px
+        @include breakpoint(mobile)
+            max-width: initial
+    .group__aceite .field:first-child
+        @include breakpoint(desktop)
+            max-width: initial
+    .btn__cadastrar
+        @include breakpoint(mobile)
+            font-size: 1.4rem
+            width: 100%
+
+.filtrar__noticia
+    .input__date
+        position: relative
+        i
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 1.8rem
+            color: $cor2
+            font-size: 2.2rem

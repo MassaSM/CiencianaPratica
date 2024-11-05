@@ -1,0 +1,96 @@
+@import "structure/mixins"
+@import "structure/reset"
+@import "structure/fonts"
+@import "structure/animation"
+@import "structure/header"
+@import "structure/footer"
+@import "structure/botoes"
+@import "structure/formularios"
+@import "structure/pages/home"
+@import "structure/pages/intern"
+@import "structure/modais"
+@import "structure/tabs"
+
+*, button, input
+	font-family: $Barlow
+	
+html
+	font-size: 62.5%
+	@include breakpoint(desktop)
+		font-size: 56.25%
+
+body
+	font-size: 1.6rem
+	width: 100%
+	min-height: 100vh
+	line-height: 1
+	position: relative
+	font-family: $Barlow
+	overflow-x: hidden
+	transition: .4s
+	&.home
+		background: $cor2
+
+a, a:hover, a:focus, a:active
+	text-decoration: none	
+
+img
+	display: block
+	border: none
+
+.center
+	width: 90%
+	max-width: 1195px
+	margin: 0 auto
+
+.container__flex
+	@include flexbox
+
+.container__grid
+	display: -ms-grid
+	display: grid
+
+
+/*Slick Dots*/
+.slick-dots
+	bottom: -35px!important
+
+.slick-dots li.slick-active button:before
+	color: $cor2!important
+	
+.slick-dots li button:before
+	font-size: 1.6rem!important
+
+.slick-prev, .slick-next, .slider-prev, .slider-next
+	z-index: 2!important
+
+.slider-next:before, .slider-prev:before
+	color: $cor2!important
+
+.slick-slide
+	margin: 0 .8rem
+
+.slider-next, .slider-prev
+	line-height: 0
+	position: absolute
+	top: 50%
+	width: 11px
+	height: 18px
+	display: block
+	-webkit-transform: translate(0,-50%)
+	-ms-transform: translate(0,-50%)
+	transform: translate(0,-50%)
+	cursor: pointer
+	border: none
+	outline: 0
+	background: 0 0
+	font-size: 1.8rem
+
+.slider-prev
+	left: -25px
+
+.slider-next
+	right: -25px
+
+.newsletter
+	display: none

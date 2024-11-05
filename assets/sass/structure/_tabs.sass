@@ -1,0 +1,46 @@
+.bgGrey
+    background: $cor7
+    @include breakpoint(mobile)
+        background: transparent
+
+.container__tables
+    table
+        &:not(:last-child)
+            margin-bottom: 1.6rem
+
+.table__tr__flex
+    @include breakpoint(mobile)
+        @include flexbox
+        @include flexwrap
+        margin: 2rem 0
+        background: $cor7
+    &:not(:last-child)
+        border-bottom: solid 1px $cor8
+        @include breakpoint(mobile)
+            border-bottom: none
+    td
+        padding: 2.4rem
+        @include breakpoint(mobile)
+            width: 100%
+            text-align: center
+            padding: 1.6rem
+    .titMobile
+        display: none
+        @include breakpoint(mobile)
+            display: block
+
+table
+    font-size: 1.6rem
+    font-weight: $regular
+    line-height: 2.4rem
+    color: $cor4
+    @include breakpoint(mobile)
+        font-size: 2rem
+    b
+        font-weight: $medium
+        font-size: 2rem
+        line-height: 2.4rem
+        color: $cor4
+    thead
+        @include breakpoint(mobile)
+            display: none

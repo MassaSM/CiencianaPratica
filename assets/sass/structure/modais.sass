@@ -1,0 +1,97 @@
+.modal
+    width: 100%
+    max-width: 400px!important
+    display: none
+
+.header__modal    
+    padding: 0
+    .icon__modal
+        @include flexbox
+        @include center
+        align-items: center
+        border-radius: 50%
+        margin: 0 auto 3rem
+        i
+            font-size: 12rem
+            color: $cor2
+
+.txt__titulo__modal
+    font-size: 2.5rem
+    line-height: 3rem
+    font-weight: $bold
+    text-align: center
+    text-transform: uppercase
+
+.txt__modal
+    font-size: 1.8rem
+    line-height: 2.5rem
+    text-align: center
+    max-width: 280px
+    margin: 1.8rem auto 5.4rem
+
+.fancybox-content
+    padding: 2.4rem!important
+     // .content
+    //     padding: 32px
+
+.fancybox-button--zoom
+    display: none!important
+
+.link__modal__visualizacao
+    color: $white
+    font-size: 1.6rem
+    margin: 2.4rem 0 0
+    display: block
+
+#sucesso, #erro   
+    .txt__titulo__modal
+        margin: 0 auto 5.7rem
+        color: $cor2
+        font-size: 2.4rem
+        line-height: 3.2rem
+        font-weight: $bold
+        font-family: $Barlow
+        text-transform: uppercase
+
+#sucesso.fancybox-content, #erro.fancybox-content
+    background: $cor1!important
+
+#sucesso .fancybox-button svg path, 
+#erro .fancybox-button svg path
+    fill: $white!important
+
+#assunto
+    max-width: 686px!important
+    .container__assuntos
+        @include grid
+        grid-template-columns: repeat(4,1fr)
+        gap: 12px
+        margin-bottom: 3.2rem
+        @include breakpoint(mobile)
+            grid-template-columns: repeat(2,1fr)
+        @media only screen and (max-width: 375px)
+            grid-template-columns: 1fr
+    .item__assunto
+        width: 100%
+        @include flexbox
+    h2
+        font-size: 4rem
+        line-height: 4.8rem
+        font-weight: $medium
+        color: $cor2
+        margin-bottom: 1.6rem
+    p
+        font-size: 1.6rem
+        line-height: 3.2rem
+        color: $cor4
+        margin-bottom: 2.4rem
+
+.btn__modal__voltar
+    font-size: 1rem
+    font-weight: $bold
+    line-height: 3.2rem
+    text-transform: uppercase
+    letter-spacing: .2rem
+    color: $cor2
+    text-align: center
+    display: block

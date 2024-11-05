@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="author" content="MassaJobs" />
+	<meta name="description" content="#" />
+	<link rel="canonical" href="#" />
+	<meta name="resource-type" content="document" />
+	<meta name="content-language" content="pt-br" />
+	<meta name="revisit" content="1 day" />
+	<meta name="ICBM" content="latlong" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="DC.title" content="Podval" />
+	<meta property="og:title" content="Podval" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="#" />
+	<meta property="og:image" content="../images/ico-facebook.jpg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="400" />
+	<meta property="og:url" content="" />
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.pnBOg">
+	<link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--Open Graph data-->
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Descrição Aqui">
+	<meta property="og:title" content="Ciência Prática">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:site_name" content="Ciência Prática">
+	<meta property="og:image" content="../images/share-image.jpg">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+	<meta property="og:url" content="https://www.enderecoaqui.com.br/">
+	<!--Facebook-->
+	<meta property="fb:pages" content="">
+	<meta property="fb:app_id" content="">
+	<!--Twitter-->
+	<meta property="twitter:description" content="Descrição Aqui">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="Ciência Prática">
+	<meta property="twitter:image" content="../images/share-image.jpg">
+	<link href="../styles/all.css" rel="stylesheet" />
+	<link href="../styles/minify/main.min.css" rel="stylesheet" />
+	<link href="../styles/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+	<link rel="preload" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></noscript>
+	<link rel="preload" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></noscript>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>Ciência Prática</title>
+</head>	
+
+<body>	
+	<header>
+		<a href="index.html"><img src="../images/logoHeader.png" class="logoHeader" alt="Ciência Prática" title="Ciência Prática"></a>
+		<nav class="nav__mobile">
+			<i class="fa-regular fa-bars"></i>
+		</nav>
+
+		<nav class="nav__menu">
+			<ul>
+				<li class="item__link__menu"><a href="index.html">Home</a></li>
+				<li class="item__link__menu"><a href="sobre.html">Sobre</a></li>
+				<li class="item__link__menu"><a href="atualizacao-profissional.html">Atualização Profissional</a></li>
+				<li class="item__link__menu">
+					<a href="#" class="link__submenu">Atuação <i class="fa-light fa-chevron-down"></i></a>
+					<div class="submenu">
+						<a href="orientacao-academica.html">Orientação Acadêmica</a>
+						<a href="cursos.html">Cursos</a>
+					</div>
+				</li>
+				<li class="item__link__menu"><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+		<div class="social__top">
+			<nav class="nav__redes__sociais">
+				<ul>
+					<li><a href="https://instagram.com/acienciapratica?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100088752895061&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/ci%C3%AAncia-pr%C3%A1tica-8b8995263/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+					<li><a href="https://twitter.com/CienciaPratica" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="breadcumb">
+			<div class="center">
+				<h1 class="title__page">Atualização Profissional</h1>
+				<p class="breadcrumb__item">Home <span>|</span> Atualização Profissional</p>
+			</div>
+		</section>
+
+		<section class="intern">
+			<div class="center">
+				<div class="group__flex">
+					<div class="col left">
+						<h2>Você conhece o que é a Atualização Profissional?</h2>
+					</div>
+
+					<div class="col right">
+						<p class="txt">A prática baseada em evidências (PBE) é obrigatória para todos os profissionais da saúde. Para a PBE, o profissional deve buscar atualização de conhecimento científico a todo momento. A soma do conhecimento científico com a experiência profissional levará a melhor escolha para qualquer decisão que o profissional necessite tomar em sua carreira. Contudo, a busca pelo conhecimento científico é uma ação difícil e complexa, dificultando a PBE. O primeiro desafio ocorre já na língua mundialmente utilizada na ciência. Geralmente, tanto os locais de busca dos artigos científicos quanto os próprios artigos estão na língua inglesa. Outra dificuldade é encontrar os termos de busca que reflitam o seu tema de interesse. Além disso, encontrar uma revista científica que seja de qualidade também não é tarefa fácil. E tudo isso é só para a busca do artigo! Após encontrar o artigo, você ainda realizará a leitura, que muitas vezes é complexa, com termos técnicos, que dificultam a compreensão do conteúdo. Ou seja, a busca pelo conhecimento científico é uma tarefa demorada e muito complexa.</p>
+						<p class="txt">A Ciência Prática desenvolveu um serviço de atualização profissional que realizará todos os passos descritos anteriormente para você, facilitando que a PBE esteja presente em sua carreira! Nós faremos a busca e entregaremos a você o conteúdo de qualidade que você precisa para se atualizar e aplicá-lo na sua prática profissional dentro do seu tema de interesse. Isso lhe proporcionará rapidez e praticidade na busca pelo conhecimento! A partir desse serviço de atualização, a prática baseada em evidência científica fará parte de sua vida profissional. </p>
+						<p class="txt">A Atualização Profissional é um programa de estudo com PBE que ocorre em um período de 12 meses. Em cada mês você receberá informações dos principais artigos científicos na sua área de interesse, apresentados de um jeito simples, rápido e prático. De acordo com o plano que você assinar, diferentes recursos didáticos para seu estudo serão disponibilizados, facilitando a compreensão do assunto. Você pode solicitar que o conteúdo seja enviado para o local de seu interesse, como WhatsApp, e-mail ou Instagram. </p>
+						<p class="txt">Ao final do período de 12 meses, você receberá um questionário para responder às perguntas do seu tema de interesse. Caso você atinja 60% de aproveitamento, você receberá um certificado de atualização profissional. Resumindo, além de atualizar o seu conhecimento, você certificará essa atualização! Acesse o vídeo e veja como é simples e dinâmico!</p>						
+						<iframe width="560" height="450" src="https://www.youtube.com/embed/w2I70rlxCp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<!-- <div class="container__exemplos__atualizacao">
+					<div class="item__exemplo">
+						<div class="container__labels">
+							<div class="label">Futebol</div>
+							<div class="label">Membros Inferiores</div>
+						</div>
+
+						<h3>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu id commodo in ac enim.</h3>
+
+						<p>Tempus, id nulla est viverra tristique volutpat lobortis consequat. Massa nunc aliquet laoreet in sem. Vitae nunc ut blandit egestas massa facilisi in Iaculis faucibus duis tristique orci. Fermentum venenatis diam, suspendisse. Pretium aliquam proin nunc ipsum.</p>
+
+						<a href="#" class="link__ler__mais">Ler mais <i class="fa-light fa-arrow-right-long"></i></a>
+					</div>
+
+					<div class="item__exemplo">
+						<div class="container__labels">
+							<div class="label">Futebol</div>
+							<div class="label">Membros Inferiores</div>
+						</div>
+
+						<h3>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu id commodo in ac enim.</h3>
+
+						<p>Tempus, id nulla est viverra tristique volutpat lobortis consequat. Massa nunc aliquet laoreet in sem. Vitae nunc ut blandit egestas massa facilisi in Iaculis faucibus duis tristique orci. Fermentum venenatis diam, suspendisse. Pretium aliquam proin nunc ipsum.</p>
+
+						<a href="#" class="link__ler__mais">Ler mais <i class="fa-light fa-arrow-right-long"></i></a>
+					</div>
+
+					<div class="item__exemplo">
+						<div class="container__labels">
+							<div class="label">Futebol</div>
+							<div class="label">Membros Inferiores</div>
+						</div>
+
+						<h3>Lorem ipsum dolor sit amet consectetur adipiscing elit arcu id commodo in ac enim.</h3>
+
+						<p>Tempus, id nulla est viverra tristique volutpat lobortis consequat. Massa nunc aliquet laoreet in sem. Vitae nunc ut blandit egestas massa facilisi in Iaculis faucibus duis tristique orci. Fermentum venenatis diam, suspendisse. Pretium aliquam proin nunc ipsum.</p>
+
+						<a href="#" class="link__ler__mais">Ler mais <i class="fa-light fa-arrow-right-long"></i></a>
+					</div>
+				</div> -->
+
+				<div class="group__flex">
+					<div class="col left">
+						<h2>Como funciona?</h2>
+					</div>
+
+					<div class="col right">
+						<p class="txt">Você escolhe o seu tema de interesse! Esqueça blogs, Instagram, youtubers ou até mesmo especializações que lhe entregam informações gerais e superficiais de assuntos aleatórios, que não são da sua área de interesse. Ofereceremos diversas opções baseadas em modalidades olímpicas, fitness, atividade física e saúde ou algum tema específico de seu interesse. Após contratar o serviço, entraremos em contato e solicitaremos que informe o seu tema de interesse. Após a seleção de seu tema e de acordo com o plano escolhido, você receberá o conteúdo para se aprofundar na sua área de interesse. Pronto para se tornar cada vez mais especialista na sua área?</p>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="bgGreen">
+			<div class="center">
+				<h2>Conheça os planos</h2>
+
+				<div class="container__planos">
+					<div class="item__plano">
+						<div class="header__plano">
+							<div class="group__flex">
+								<div class="col">
+									<h3>Básico</h3>
+									<p class="white">04 serviços</p>
+								</div>
+
+								<div class="col">
+									<h4 class="white">R$ 120,00</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="itens__plano">
+							<p class="check"><i class="fa-solid fa-circle-check"></i> 1 tema de interesse</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> 10 artigos</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> Vídeo</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> Aplicação prática</p>
+							<!-- <p class="not__check"><i class="fa-regular fa-circle-xmark"></i><span>Dolor sit amet consectetur</span></p>
+							<p class="not__check"><i class="fa-regular fa-circle-xmark"></i><span>Sit amet consectetur</span></p>
+							<p class="not__check"><i class="fa-regular fa-circle-xmark"></i><span>Ipsum dolor sit amet consectetur</span></p> -->
+						</div>
+
+						<a href="https://go.hotmart.com/P79138422O?off=59qn7o83" target="_blank" class="link__quero__contratar">Quero Contratar</a>
+						<!-- <a data-fancybox data-src="#assunto" class="link__quero__contratar">Quero Contratar</a> -->
+					</div>
+
+					<div class="item__plano">
+						<div class="header__plano">
+							<div class="group__flex">
+								<div class="col">
+									<h3>Intermediário</h3>
+									<p class="white">06 serviços</p>
+								</div>
+
+								<div class="col">
+									<h4 class="white">R$ 300,00</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="itens__plano">
+							<p class="check"><i class="fa-solid fa-circle-check"></i> 1 tema de interesse</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> 1 sub-tema</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> 10 artigos</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> Vídeo</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> Aplicação prática</p>
+							<p class="check"><i class="fa-solid fa-circle-check"></i> Infográfico</p>
+							<!-- <p class="not__check"><i class="fa-regular fa-circle-xmark"></i><span>Ipsum dolor sit amet consectetur</span></p> -->
+						</div>
+
+						<a href="https://go.hotmart.com/P79138422O?off=3iih0z2p" target="_blank" class="link__quero__contratar">Quero Contratar</a>
+						<!-- <a data-fancybox data-src="#assunto" class="link__quero__contratar">Quero Contratar</a> -->
+					</div>
+
+					<div class="item__plano white">
+						<div class="destaque">
+							<h2>Mais Comprado</h2>
+						</div>
+						<div class="header__plano">
+							<div class="group__flex">
+								<div class="col">
+									<h3>Completo</h3>
+									<p class="black">09 serviços</p>
+								</div>
+
+								<div class="col">
+									<h4 class="black">R$ 600,00</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="itens__plano">
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> 1 tema de interesse</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> 1 sub-tema</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> 1 termo específico</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> 20 artigos</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> Vídeo</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> Aplicação prática</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> Infográfico</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> Mapa Mental</p>
+							<p class="check black"><i class="fa-solid fa-circle-check"></i> Contato para esclarecer dúvidas dos artigos</p>
+						</div>
+
+						<a href="https://go.hotmart.com/P79138422O?off=hz7jwwmt" target="_blank" class="link__quero__contratar">Quero Contratar</a>
+						<!-- <a data-fancybox data-src="#assunto" class="link__quero__contratar">Quero Contratar</a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contato__whatsapp">
+			<div class="center">
+				<div class="group__flex">
+					<div class="col">
+						<h2>Já sabe qual serviço contratar?</h2>
+					</div>
+
+					<div class="col">
+						<p class="txt">Envie uma mensagem no WhatsApp e te ajudamos a encontrar o melhor serviço para você.</p>
+						<a href="https://wa.me/message/2GUK6ZAYUEDND1" target="_blank" class="link__whatsapp"><i class="fa-brands fa-whatsapp"></i> Chamar no Whatsapp</a>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+		<section class="intern not__padding">
+			<div class="center">
+				<div class="areas__de__atuacao">
+					<h2>Áreas de Atuação</h2>
+
+					<div class="container__areas__atuacao">
+						<div class="item__atuacao">
+							<div class="descricao__atuacao">
+								<h2>Orientação Acadêmica</h2>
+								<!-- <p>Lorem ipsum dolor amet.</p> -->
+								<a href="/pages/orientacao-academica.html" class="link__ver__mais">Ver mais <i class="fa-light fa-arrow-right-long"></i></a>
+							</div>
+							<div class="img__atuacao">
+								<img src="../images/area__de__atuacao/img-area-atuacao-01.jpg" class="img__item__atuacao" alt="Imagem Área de Atuação" title="Imagem Área de Atuação">
+							</div>
+						</div>
+
+						<div class="item__atuacao">
+							<div class="descricao__atuacao">
+								<h2>Cursos</h2>
+								<!-- <p>Lorem ipsum dolor amet.</p> -->
+								<a href="/pages/cursos.html"  class="link__ver__mais">Ver mais <i class="fa-light fa-arrow-right-long"></i></a>
+							</div>
+							<div class="img__atuacao">
+								<img src="../images/area__de__atuacao/img-area-atuacao-03.jpg" class="img__item__atuacao" alt="Imagem Área de Atuação" title="Imagem Área de Atuação">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<section class="sitemap">
+			<div class="center">
+				<div class="container__flex__group__sitemap">
+					<div class="col left">
+						<a href="index.html"><img src="../images/logoFooter.png" class="logoFooter" alt="Ciência Prática" title="Ciência Prática"></a>
+
+						<div class="container__flex__group__links">
+							<div class="col">
+								<a href="sobre.html">Sobre</a>
+								<a href="atualizacao-profissional.html">Atualização Profissional</a>
+								<a href="orientacao-academica.html">Orientação Acadêmica</a>
+							</div>
+
+							<div class="col">
+								<a href="cursos.html">Cursos</a>
+								<a href="contato.html">Contato</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col right">
+						<div class="newsletter">
+							<h3>Newsletter</h3>
+							<h2>Receba nosso conteúdo gratuito.</h2>
+
+							<div class="bgForm">
+								<form id="newsletter">
+									<input type="text" class="input required" placeholder="Digite seu e-mail">
+									<button type="submit" class="btn__submit__newsletter">Enviar <i class="fa-thin fa-arrow-right"></i></button>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="contatos__sociais">
+							<div class="redes__sociais">
+								<h2>Siga nas Redes Sociais</h2>
+								<ul>
+									<li><a href="https://instagram.com/acienciapratica?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100088752895061&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/ci%C3%AAncia-pr%C3%A1tica-8b8995263/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+									<li><a href="https://twitter.com/CienciaPratica" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+								</ul>								
+							</div>
+
+							<div class="contato__social">
+								<h2>Contato</h2>
+								<p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/message/2GUK6ZAYUEDND1"> (44) 9847-8674</a></p>
+								<p><i class="fa-regular fa-envelope"></i> <a href="mailto:contato@cienciapratica.com">contato@cienciapratica.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="copyright">
+			<p>Copyright © 2023 Ciência Prática - Todos os direitos reservados</p>
+		</section>
+	</footer>
+
+	<!-- <a href="../" data-fancybox data-src="#sucesso">Modal Sucesso</a><br>
+	<a href="../" data-fancybox data-src="#erro">Modal Erro</a><br> -->
+
+	<!--Modal Assunto-->
+	<div class="modal" id="assunto">
+		<h2>Escolha os assuntos</h2>
+		<p>Marque 3 assuntos para receber conteúdos personalizados de acordo com o seu interesse.</p>
+		<form id="form-assunto">
+			<div class="container__assuntos">
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto01">
+						<label for="assunto01">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto02">
+						<label for="assunto02">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto03">
+						<label for="assunto03">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto04">
+						<label for="assunto04">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto05">
+						<label for="assunto05">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto06">
+						<label for="assunto06">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto07">
+						<label for="assunto07">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto08">
+						<label for="assunto08">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto09">
+						<label for="assunto09">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto10">
+						<label for="assunto10">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto11">
+						<label for="assunto11">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto12">
+						<label for="assunto12">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto13">
+						<label for="assunto13">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto14">
+						<label for="assunto14">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto15">
+						<label for="assunto15">Lorem Ipsum</label>
+					</div>
+				</div>
+
+				<div class="item__assunto">
+					<div class="form-group">
+						<input class="input__checkbox" type="checkbox" id="assunto16">
+						<label for="assunto16">Lorem Ipsum</label>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn__continuar" type="submit" disabled>Continuar</button>
+		</form>
+	</div>
+	<!--Fim Modal Assunto-->
+
+	<!--Modal Sucesso-->
+	<div class="modal" id="sucesso">
+		<div class="content">			
+			<header class="header__modal">		
+				<div class="icon__modal">
+					<i class="fas fa-check"></i>
+				</div>					
+			</header>
+
+			<h2 class="txt__titulo__modal">Mensagem enviada com sucesso!</h2>
+
+			<a href="#" data-fancybox-close class="btn__modal__voltar">Voltar</a>
+		</div>
+	</div>
+	<!--Fim Modal Sucesso-->
+
+	<!--Modal Erro-->
+	<div class="modal" id="erro">
+		<div class="content">			
+			<header class="header__modal">		
+				<div class="icon__modal">
+					<i class="fa-light fa-circle-exclamation"></i>
+				</div>					
+			</header>
+
+			<h2 class="txt__titulo__modal">Um Erro foi Encontrado!</h2>
+		</div>
+	</div>
+	<!--Fim Modal Erro-->
+</body>
+</html>
+<script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/main.js"></script>
+<script type="text/javascript" src="../scripts/jquery.mask.min.js"></script>
+<script src="../scripts/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script>
+	$('.nav__menu ul li:nth-child(3)').addClass('active');
+	exemplos.init();
+	planos.init();
+</script>
